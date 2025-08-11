@@ -17,12 +17,6 @@ Developed by: Mouadev - 2025.
 
 ## Requirements
 - **Python 3.6+**: Includes standard library modules:
-  - `os`: File and directory operations.
-  - `re`: Regular expressions for URL parsing.
-  - `subprocess`: Running IDM commands.
-  - `time`: Delays between downloads.
-  - `sys`: System exit handling.
-  - `pathlib.Path`: Cross-platform path handling.
 - **Internet Download Manager (IDM)**: Installed and running (path: `C:\Program Files (x86)\Internet Download Manager\IDMan.exe` or similar).
 - **Python Dependencies** (in `requirements.txt`):
   - `yt-dlp`: For extracting and downloading YouTube videos.
@@ -39,5 +33,5 @@ Developed by: Mouadev - 2025.
 
 ## Contacts
 -Telegram : https://t.me/Pilot2201
--instagram
--Email
+</br> -instagram
+</br> -Email
