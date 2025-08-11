@@ -15,19 +15,65 @@ Developed by: Mouadev - 2025.
 - Handles non-ASCII playlist titles (e.g., Arabic characters).
 - Debug output for errors like "No playlist found or invalid URL".
 
-## Requirements
-- **Python 3.6+**: Includes standard library modules:
-- **Internet Download Manager (IDM)**: Installed and running (path: `C:\Program Files (x86)\Internet Download Manager\IDMan.exe` or similar), you will find it in this repo . 
-- **Python Dependencies** (in `requirements.txt`):
-  - `yt-dlp`: For extracting and downloading YouTube videos.
-  - `pywin32`: For minimizing the IDM window (provides `win32gui` and `win32con`).
+<h2>Requirements</h2>
+<ul>
+  <li><strong>Python 3.6+</strong></li>
+  <li><strong>Internet Download Manager (IDM)</strong> installed and running<br>
+    Typical installation paths:<br>
+    <code>C:\Program Files (x86)\Internet Download Manager\IDMan.exe</code> or<br>
+    <code>C:\Program Files\Internet Download Manager\IDMan.exe</code><br>
+    <em>(IDM installer is included in this repository)</em>
+  </li>
+  <li><strong>Python dependencies</strong> (see <code>requirements.txt</code>):<br>
+    <ul>
+      <li><code>yt-dlp</code> — for downloading YouTube videos</li>
+      <li><code>pywin32</code> — for Windows GUI interaction (minimizing IDM window)</li>
+    </ul>
+  </li>
+</ul>
 
-## Installation
-1. **Install IDM correctly**:
-   </br>-Download & unzip the folder of idm app and follow instructions.
-3. **Install Python**:
-   - Download and install Python 3.6+ from [python.org](https://www.python.org/).
-   - Ensure Python is added to your system PATH.
+<h2>Installation</h2>
+
+<h3>1. Install Python</h3>
+<ul>
+  <li>Download and install Python 3.6 or later from <a href="https://www.python.org/">python.org</a></li>
+  <li>During installation, check <strong>Add Python to PATH</strong></li>
+  <li>Verify installation by opening a new terminal and running:<br>
+    <code>python --version</code>
+  </li>
+</ul>
+
+<h3>2. Install IDM</h3>
+<ul>
+  <li>Download and unzip IDM from the provided folder or official site</li>
+  <li>Run the installer and follow the instructions</li>
+  <li>Ensure IDM is running before starting downloads</li>
+</ul>
+
+<h3>3. Install Python dependencies</h3>
+<p>Run the following command in your terminal or command prompt:</p>
+<pre><code>pip install -r requirements.txt</code></pre>
+
+<h3>4. Install FFmpeg (required for merging video/audio formats)</h3>
+<ul>
+  <li>Visit <a href="https://ffmpeg.org/download.html">https://ffmpeg.org/download.html</a></li>
+  <li>Download a Windows build (e.g., from gyan.dev or BtbN)</li>
+  <li>Extract to a folder such as <code>C:\ffmpeg</code></li>
+  <li>Add the <code>bin</code> directory to your system <code>PATH</code>:
+    <ul>
+      <li>Go to Windows Settings → System → About → Advanced system settings → Environment Variables</li>
+      <li>Edit the <code>Path</code> variable and add <code>C:\ffmpeg\bin</code></li>
+    </ul>
+  </li>
+  <li>Open a new terminal and verify installation by running:<br>
+    <code>ffmpeg -version</code>
+  </li>
+</ul>
+
+<h2>Usage</h2>
+<p>Run the script:</p>
+<pre><code>python ytdown.py</code></pre>
+
  
 4. **Install Python Dependencies**:
    ```bash
