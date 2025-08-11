@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 YouTube Playlist Downloader with IDM Integration
-Developed by: Mouadev (Updated by Grok for reliability)
+Developed by: Mouadev 
 
 Usage:
 1. Install dependencies: pip install --upgrade yt-dlp pywin32
@@ -320,4 +320,5 @@ def main():
     print('\nCheck IDM or Downloads folder for progress.')
 
 if __name__ == "__main__":
+
     main()
