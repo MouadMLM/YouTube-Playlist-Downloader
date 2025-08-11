@@ -24,7 +24,7 @@ Developed by: Mouadev - 2025.
 
 ## Installation
 1. **Install IDM correctly**:
-   -Download & unzip the folder of idm app and follow instructions.
+   </br>-Download & unzip the folder of idm app and follow instructions.
 3. **Install Python**:
    - Download and install Python 3.6+ from [python.org](https://www.python.org/).
    - Ensure Python is added to your system PATH.
