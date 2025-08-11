@@ -3,7 +3,7 @@
 ## Overview
 This Python script downloads YouTube playlists using `yt-dlp` and integrates with Internet Download Manager (IDM) for faster downloads. It supports selecting video quality, skipping existing files, and automatically minimizing the IDM window. Downloads are saved to a subfolder in the user's Downloads directory, named after the playlist (sanitized for filesystem compatibility).
 
-Developed by: Mouadev (Updated for reliability and IDM minimization).
+Developed by: Mouadev - 2025.
 
 ## Features
 - Extracts playlist information and video URLs using `yt-dlp`.
