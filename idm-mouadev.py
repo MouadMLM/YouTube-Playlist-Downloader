@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 YouTube Playlist Downloader with IDM Integration
 Developed by: Mouadev 
@@ -322,3 +321,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
