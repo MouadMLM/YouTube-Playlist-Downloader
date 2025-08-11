@@ -17,17 +17,19 @@ Developed by: Mouadev - 2025.
 
 ## Requirements
 - **Python 3.6+**: Includes standard library modules:
-- **Internet Download Manager (IDM)**: Installed and running (path: `C:\Program Files (x86)\Internet Download Manager\IDMan.exe` or similar).
+- **Internet Download Manager (IDM)**: Installed and running (path: `C:\Program Files (x86)\Internet Download Manager\IDMan.exe` or similar), you will find it in this repo . 
 - **Python Dependencies** (in `requirements.txt`):
   - `yt-dlp`: For extracting and downloading YouTube videos.
   - `pywin32`: For minimizing the IDM window (provides `win32gui` and `win32con`).
 
 ## Installation
-1. **Install Python**:
+1. **Install IDM correctly**:
+   -Download & unzip the folder of idm app and follow instructions.
+3. **Install Python**:
    - Download and install Python 3.6+ from [python.org](https://www.python.org/).
    - Ensure Python is added to your system PATH.
-
-2. **Install Python Dependencies**:
+ 
+4. **Install Python Dependencies**:
    ```bash
    pip install -r requirements.txt
 
