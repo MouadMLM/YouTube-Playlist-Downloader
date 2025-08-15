@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 """
 Optimized YouTube Playlist Downloader (yt-dlp 2025 Edition)
 Author: Mouadev (Improved & Hardened)
@@ -20,7 +20,7 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 class StrongDownloader:
-    def _init_(self):
+    def __init__(self):
         self.downloaded = 0
         self.skipped = 0
         self.failed = 0
@@ -41,6 +41,8 @@ class StrongDownloader:
         return f"https://www.youtube.com/playlist?list={match.group(1)}" if match else url
 
     def get_existing_files(self, path):
+        if not os.path.exists(path):
+            return set()
         exts = {".mp4", ".webm", ".mkv", ".avi", ".mov", ".flv", ".m4v"}
         return {os.path.splitext(f)[0].lower() for f in os.listdir(path) if os.path.splitext(f)[1].lower() in exts}
 
@@ -143,7 +145,7 @@ class StrongDownloader:
         print("="*50)
 
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     print("🎵 STRONG YOUTUBE PLAYLIST DOWNLOADER")
     url = input("Enter YouTube playlist/video URL: ").strip()
     workers = input("Threads (default 4, max 8): ").strip()
