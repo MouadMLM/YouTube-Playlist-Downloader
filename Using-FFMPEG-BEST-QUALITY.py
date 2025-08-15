@@ -143,7 +143,7 @@ class StrongDownloader:
         print("="*50)
 
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     print("🎵 STRONG YOUTUBE PLAYLIST DOWNLOADER")
     url = input("Enter YouTube playlist/video URL: ").strip()
     workers = input("Threads (default 4, max 8): ").strip()
